@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body {
+            background-image: url('background2.jpg');
+            /* Optional: Additional background properties */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-size: cover;       /* Stretches/shrinks the image to cover the whole element */
+            background-attachment: fixed; /* Fixes the image so it doesn't scroll with content */
+            color: white;
+            overflow-y: scroll;
+            margin: 0;
+            font-family: exo-bold, Arial Black, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+            font-family: "Exo Bold", sans-serif; 
+            font-size: 30px;
+        }
+      }
+        
+     .gradient-text {
+            color: linear-gradient(45deg, #bbff29, #ffee03); 
+            background-image: linear-gradient(45deg, #bbff29, #ffee03);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            font-size: 30px;
+            font-family: "Exo Bold", Arial Black;
+            font-weight: bold;
+        }
+        .container {
+    max-width: 300px;
+    max-height: 45px;
+    margin: 4px auto;
+    padding: 3px;
+    background-color: #aafc1c; /* Semi-transparent background */
+    border: 9px solid #97ed00;
+    border-radius: 75px;
+    outline: 6px solid #02d10c;
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+}
+        .container2 {
+    max-width: 80px;
+    max-height: 20px;
+    margin: 12px auto;
+    padding: 2px;
+    background-color: #f1fc1c;
+    border: 3px solid #fcb91c;
+    border-radius: 75px; /* Semi-transparent background */
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+}
+        
+        @font-face {
+  font-family: "Exo Bold";
+       src: url('/exo/Exo-Bold.otf');
+       src: url('/exo/Exo-Bold.otf') format('otf');
+
+  /* Include other formats for wider support */
+}
+
+        .outlined-text {
+  -webkit-text-stroke-width: 2px; /* Sets the outline width */
+  -webkit-text-stroke-color: #c90270; /* Sets the outline color */
+  /* Standard property for Firefox and other modern browsers, though -webkit prefix often works everywhere */
+  text-stroke-width: 2px; 
+  text-stroke-color: #c90270;
+}
+
+        
+        .slide-in {
+            position: absolute;
+            bottom: -100px; /* Start off-screen */
+            left: 0;
+            width: 100px; /* Adjust as needed */
+            transition: bottom 1s ease-in-out;
+        }
+        .slide-in.show {
+            bottom: 0; /* Slide into view */
+        }
+        
+    </style>
+</head>
+
+  
+   <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
